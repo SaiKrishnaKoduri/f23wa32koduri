@@ -7,14 +7,14 @@ router.get('/', function(req, res, next) {
   if(val)
   {
     const a=parseFloat(val)
-    const b=Math.cos(a)
-    res.send('Math.cos()'+' applied to '+a+' is '+b)
+    const b=Math.tanh(a)
+    res.send('Math.tanh()'+' applied to '+a+' is '+b)
   }
   else
   {
     const a=Math.floor((Math.random())*20+1)
-    const b=Math.cos(a)
-    res.send('Math.cos()'+' applied to '+a+' is '+b)
+    const b=Math.tanh(a)
+    res.send('Math.tanh()'+' applied to '+a+' is '+b)
   }
 });
 
